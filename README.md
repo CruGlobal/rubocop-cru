@@ -1,18 +1,13 @@
-# RuboCop Rails
+# RuboCop Cru
 
-[![Build Status](https://travis-ci.org/toshimaru/rubocop-rails.svg?branch=master)](https://travis-ci.org/toshimaru/rubocop-rails)
-[![Gem Version](https://badge.fury.io/rb/rubocop-rails.svg)](https://badge.fury.io/rb/rubocop-rails)
-
-RuboCop configuration which has the same code style checking as official Ruby on Rails.
-
-[Official RoR Rubocop Configuration](https://github.com/rails/rails/blob/master/.rubocop.yml)
+RuboCop configuration shared across Cru applications.
 
 ## Installation
 
 Add this line to your application's `Gemfile`:
 
 ```ruby
-gem "rubocop-rails"
+gem 'rubocop-cru'
 ```
 
 ## Usage
@@ -21,8 +16,8 @@ Add this line to your application's `.rubocop.yml`:
 
 ```yml
 inherit_gem:
-  rubocop-rails:
-    - config/rails.yml
+  rubocop-cru:
+    - config/cru.yml
 ```
 
 ## Customization
@@ -33,14 +28,14 @@ For example, if you want to change `TargetRubyVersion`, you can do it like:
 
 ```yml
 inherit_gem:
-  rubocop-rails:
-    - config/rails.yml
+  rubocop-cru:
+    - config/cru.yml
 
 AllCops:
   TargetRubyVersion: 2.3
 ```
 
-This overrides `config/rails.yml` setting with `TargetRubyVersion: 2.3`.
+This overrides `config/cru.yml` setting with `TargetRubyVersion: 2.3`.
 
 ## License
 
