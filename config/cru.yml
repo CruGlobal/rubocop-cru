@@ -1,0 +1,47 @@
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+  Exclude:
+    - db/**/*
+    - script/**/*
+    - vendor/**/*
+    - bin/**/*
+
+  TargetRubyVersion: 2.4
+  UseCache: true
+  CacheRootDirectory: 'tmp/cache/'
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+Documentation:
+  Enabled: false
+
+MethodLength:
+  Severity: warning
+  Max: 15
+
+Style/AndOr:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+    - config/routes.rb
+
+GuardClause:
+  MinBodyLength: 3
+
+Style/Lambda:
+  Exclude:
+      - config/**/*
+
+Naming/FileName:
+  Exclude:
+    - Gemfile
+    - Guardfile
