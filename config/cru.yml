@@ -9,7 +9,7 @@ AllCops:
     - bin/**/*
     - node_modules/**/*
 
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.5
   UseCache: true
   CacheRootDirectory: 'tmp/cache/'
   DisplayCopNames: true
