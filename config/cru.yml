@@ -7,6 +7,7 @@ AllCops:
     - script/**/*
     - vendor/**/*
     - bin/**/*
+    - node_modules/**/*
 
   TargetRubyVersion: 2.4
   UseCache: true
